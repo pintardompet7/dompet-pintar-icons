@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dompet Pintar — Icons</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #142a43 0%, #176c60 100%);
+            color: #fff;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        h1 { font-size: 28px; margin: 0 0 12px; letter-spacing: -0.5px; }
+        p { font-size: 14px; color: #b8e0d3; margin: 0 0 30px; }
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            max-width: 600px;
+            width: 100%;
+        }
+        .icon-card {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 14px;
+            padding: 20px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.2s;
+            backdrop-filter: blur(10px);
+        }
+        .icon-card:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-3px);
+            border-color: #36c49a;
+        }
+        .icon-card img {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            margin: 0 auto 10px;
+            display: block;
+        }
+        .icon-card strong {
+            font-size: 12px;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .icon-card small {
+            font-size: 10px;
+            color: #b8e0d3;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Dompet Pintar Icons</h1>
+    <p>Ikon PWA untuk aplikasi Dompet Pintar</p>
+
+    <div class="icons">
+        <a href="favicon.ico" class="icon-card">
+            <img src="favicon-32x32.png" alt="Favicon">
+            <strong>Favicon</strong>
+            <small>favicon.ico</small>
+        </a>
+        <a href="favicon-16x16.png" class="icon-card">
+            <img src="favicon-16x16.png" alt="16x16">
+            <strong>16×16</strong>
+            <small>favicon-16x16.png</small>
+        </a>
+        <a href="favicon-32x32.png" class="icon-card">
+            <img src="favicon-32x32.png" alt="32x32">
+            <strong>32×32</strong>
+            <small>favicon-32x32.png</small>
+        </a>
+        <a href="apple-touch-icon.png" class="icon-card">
+            <img src="apple-touch-icon.png" alt="Apple Touch">
+            <strong>Apple Touch</strong>
+            <small>apple-touch-icon.png</small>
+        </a>
+        <a href="android-chrome-192x192.png" class="icon-card">
+            <img src="android-chrome-192x192.png" alt="192x192">
+            <strong>192×192</strong>
+            <small>android-chrome-192x192.png</small>
+        </a>
+        <a href="android-chrome-512x512.png" class="icon-card">
+            <img src="android-chrome-512x512.png" alt="512x512">
+            <strong>512×512</strong>
+            <small>android-chrome-512x512.png</small>
+        </a>
+    </div>
+</body>
+</html>
